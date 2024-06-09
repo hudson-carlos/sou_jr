@@ -1,18 +1,17 @@
-import Image from 'next/image'
-
-interface props {
+import styles from '../styles/card.module.css';
+interface prop {
   title: string;
-  img: any;
+  image: string;
 }
-
-export default ({title, img}: props) => {
+const Card = ({ title, image }: prop) => {
   return (
-    <div>
-      <img
-        src={img}
-        alt={title}
-      />
-      <h1>{title}</h1>
+    <div className={styles.card}>
+      <img src={image} alt={title} className={styles.image} />
+      <div>
+        <h3>{title}</h3>
+      </div>
     </div>
   );
-}
+};
+
+export default Card;

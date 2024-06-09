@@ -22,7 +22,7 @@ export default function Home() {
         
         return (
           // <h1>{title}</h1>
-          <Card title={title} img={image} />
+          <Card title={title} image={image} />
         )
       })}
     </main>
