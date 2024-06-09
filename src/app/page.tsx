@@ -17,9 +17,9 @@ export default function Home() {
 
   return (
     <main>
-      {list.map(({ title, image }) => {
+      {list.map(({ title, image, description }) => {
         return (
-          <Card title={title} image={image} />
+          <Card title={title} image={image}  description={description}/>
         )
       })}
     </main>
