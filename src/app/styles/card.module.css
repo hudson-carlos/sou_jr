@@ -1,11 +1,10 @@
-/* styles/Home.module.css */
 .card {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     flex-wrap: wrap;
     width: 30%;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .image {

@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Card from "./components/card";
 import api from "./api";
+import "./globals.css";
 
 export default function Home() {
   const [list, setList] = useState([]);
@@ -16,12 +17,8 @@ export default function Home() {
 
   return (
     <main>
-      {/* <h1>hudson</h1> */}
       {list.map(({ title, image }) => {
-        // console.log(urlToImage);
-        
         return (
-          // <h1>{title}</h1>
           <Card title={title} image={image} />
         )
       })}
